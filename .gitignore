@@ -1,0 +1,19 @@
+# Ignore files compiled from Go source code.
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ignore generated binary files.
+*.test
+*.out
+
+# Ignore directories created by go test.
+/_test/
+
+# Ignore the vendor directory.
+/vendor/
+
+# Ignore any file named .DS_Store.
+.DS_Store
