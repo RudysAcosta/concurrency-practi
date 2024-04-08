@@ -1,0 +1,127 @@
+{
+    "book": "Concurrency in Go",
+    "chapter": "2- Modeling Your Code: Communicating Sequential Processes",
+    "questions_answers": [
+      {
+        "es": {
+          "question": "¿Cuál es la diferencia fundamental entre concurrencia y paralelismo?",
+          "answer": "La diferencia fundamental es que la concurrencia es una propiedad del código, mientras que el paralelismo es una propiedad del programa en ejecución.",
+          "importance": 5
+        },
+        "en": {
+          "question": "What is the fundamental difference between concurrency and parallelism?",
+          "answer": "The fundamental difference is that concurrency is a property of the code, while parallelism is a property of the running program.",
+          "importance": 5
+        }
+      },
+      {
+        "es": {
+          "question": "¿Por qué se considera que Go aprovecha al máximo la diferencia entre concurrencia y paralelismo?",
+          "answer": "Se considera que Go aprovecha al máximo la diferencia entre concurrencia y paralelismo porque ofrece abstracciones como goroutines y canales que permiten modelar la concurrencia de manera más natural y eficiente.",
+          "importance": 4
+        },
+        "en": {
+          "question": "Why is it considered that Go takes full advantage of the difference between concurrency and parallelism?",
+          "answer": "It is considered that Go takes full advantage of the difference between concurrency and parallelism because it offers abstractions like goroutines and channels that allow modeling concurrency in a more natural and efficient way.",
+          "importance": 4
+        }
+      },
+      {
+        "es": {
+          "question": "¿Cuáles son algunas de las abstracciones subyacentes que permiten distinguir entre concurrencia y paralelismo en Go?",
+          "answer": "Las abstracciones subyacentes que permiten distinguir entre concurrencia y paralelismo incluyen las primitivas de concurrencia de Go, el tiempo de ejecución del programa, el sistema operativo y la arquitectura subyacente del hardware.",
+          "importance": 3
+        },
+        "en": {
+          "question": "What are some of the underlying abstractions that allow distinguishing between concurrency and parallelism in Go?",
+          "answer": "The underlying abstractions that allow distinguishing between concurrency and parallelism include Go's concurrency primitives, the program's runtime, the operating system, and the underlying hardware architecture.",
+          "importance": 3
+        }
+      },
+      {
+        "es": {
+          "question": "¿Cuál es la principal ventaja de utilizar goroutines y canales en Go para la concurrencia?",
+          "answer": "La principal ventaja es que goroutines y canales en Go proporcionan un modelo de concurrencia más limpio y comprensible, facilitando la escritura, lectura y razonamiento sobre el código concurrente.",
+          "importance": 5
+        },
+        "en": {
+          "question": "What is the main advantage of using goroutines and channels in Go for concurrency?",
+          "answer": "The main advantage is that goroutines and channels in Go provide a cleaner and more understandable concurrency model, making it easier to write, read, and reason about concurrent code.",
+          "importance": 5
+        }
+      },
+      {
+        "es": {
+          "question": "¿Cómo influye el concepto de CSP en el diseño de concurrencia de Go?",
+          "answer": "El concepto de CSP influye en el diseño de concurrencia de Go al proporcionar un enfoque para modelar procesos de comunicación secuenciales mediante la utilización de canales para la comunicación entre goroutines.",
+          "importance": 4
+        },
+        "en": {
+          "question": "How does the concept of CSP influence the design of concurrency in Go?",
+          "answer": "The concept of CSP influences the design of concurrency in Go by providing an approach to modeling sequential communication processes using channels for communication between goroutines.",
+          "importance": 4
+        }
+      },
+      {
+        "es": {
+          "question": "¿Por qué las goroutines son una alternativa más ligera y eficiente a los hilos tradicionales?",
+          "answer": "Las goroutines son una alternativa más ligera y eficiente a los hilos tradicionales porque son multiplexadas automáticamente por el tiempo de ejecución de Go y requieren menos recursos para su creación y gestión.",
+          "importance": 5
+        },
+        "en": {
+          "question": "Why are goroutines a lighter and more efficient alternative to traditional threads?",
+          "answer": "Goroutines are a lighter and more efficient alternative to traditional threads because they are automatically multiplexed by the Go runtime and require fewer resources for their creation and management.",
+          "importance": 5
+        }
+      },
+      {
+        "es": {
+          "question": "¿Cuándo sería más apropiado utilizar primitivas de sincronización de acceso a memoria en lugar de canales en Go?",
+          "answer": "Sería más apropiado utilizar primitivas de sincronización de acceso a memoria en lugar de canales en Go cuando se necesita gestionar internamente el estado crítico de una estructura de datos.",
+          "importance": 3
+        },
+        "en": {
+          "question": "When would it be more appropriate to use memory access synchronization primitives instead of channels in Go?",
+          "answer": "It would be more appropriate to use memory access synchronization primitives instead of channels in Go when it is necessary to internally manage the critical state of a data structure.",
+          "importance": 3
+        }
+      },
+      {
+        "es": {
+          "question": "¿Cuál es la recomendación principal en cuanto a la coordinación de la concurrencia en Go?",
+          "answer": "La recomendación principal es utilizar canales cuando sea posible para coordinar la concurrencia en Go, ya que son más componibles y menos propensos a problemas de sincronización que las primitivas de acceso a memoria.",
+          "importance": 4
+        },
+        "en": {
+          "question": "What is the main recommendation regarding coordinating concurrency in Go?",
+          "answer": "The main recommendation is to use channels whenever possible to coordinate concurrency in Go, as they are more composable and less prone to synchronization issues than memory access primitives.",
+          "importance": 4
+        }
+      },
+      {
+        "es": {
+          "question": "¿Cómo se alinea el enfoque de Go hacia la concurrencia con su filosofía general de diseño de lenguaje?",
+          "answer": "El enfoque de Go hacia la concurrencia se alinea con su filosofía general de diseño de lenguaje, que prioriza la simplicidad y la claridad del código.",
+          "importance": 5
+        },
+        "en": {
+          "question": "How does Go's approach to concurrency align with its overall language design philosophy?",
+          "answer": "Go's approach to concurrency aligns with its overall language design philosophy, which prioritizes simplicity and code clarity.",
+          "importance": 5
+        }
+      },
+      {
+        "es": {
+          "question": "¿Cuál es la ventaja principal de modelar problemas concurrentes utilizando goroutines y canales en Go?",
+          "answer": "La ventaja principal de modelar problemas concurrentes utilizando goroutines y canales en Go es que proporciona un enfoque más natural y expresivo, facilitando la comprensión y el mantenimiento del código concurrente, al mismo tiempo que permite mejoras en el rendimiento a través del tiempo de ejecución de Go.",
+          "importance": 5
+        },
+        "en": {
+          "question": "What is the main advantage of modeling concurrent problems using goroutines and channels in Go?",
+          "answer": "The main advantage of modeling concurrent problems using goroutines and channels in Go is that it provides a more natural and expressive approach, making it easier to understand and maintain concurrent code, while also allowing performance improvements through the Go runtime.",
+          "importance": 5
+        }
+      }
+    ]
+  }
+  
